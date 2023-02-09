@@ -40,7 +40,7 @@ const CategoriesSection: FC = () => {
             <li>
               <Image src={price} alt="price icon" />
               <span className={styles.heading}>23 400 ₽</span>
-              <span>с Fuel Accounting</span>
+              <span>Fuel Accounting</span>
             </li>
             <li>
               <Image src={theory} alt="theory icon" />
@@ -72,7 +72,7 @@ const CategoriesSection: FC = () => {
             </li>
             <li>
               <Image src={theory} alt="theory icon" />
-              <span className={styles.heading}>Теория</span>
+              <span className={styles.heading}>Theory</span>
               <span>- 3 Months</span>
             </li>
             <li>

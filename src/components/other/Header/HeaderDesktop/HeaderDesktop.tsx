@@ -30,16 +30,16 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
           <ul>
             <li>
               <Link href="/#categories" scroll={false}>
-                Тарифы и цены
+                Tariffs and prices
               </Link>
             </li>
             <li>
               <Link href="/#form" scroll={false}>
-                Заявка на обучение
+                Training request
               </Link>
             </li>
             <li>
-              <Link href="/contacts#header">Контакты</Link>
+              <Link href="/contacts#header">Contact Us</Link>
             </li>
           </ul>
         </nav>
@@ -60,7 +60,7 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
           ) : (
             <Link href="/profile">
               <Button className={styles.profile} secondary>
-                Профиль
+                Profile
               </Button>
             </Link>
           )
@@ -70,7 +70,7 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
             className={styles.authorize}
             secondary
           >
-            Авторизация
+            Authorization
           </Button>
         )}
       </div>
