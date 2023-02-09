@@ -36,7 +36,7 @@ const App: NextPage<TypeAppProps> = ({ Component, pageProps }) => {
               />
               <meta name="author" content="ShotMeow" />
               <meta name="copyright" content="ShotMeow" />
-              <title>Drive With Confidence</title>
+              <title>DriveWithConfidence</title>
             </Head>
             <Component {...pageProps} />
           </AuthProvider>
