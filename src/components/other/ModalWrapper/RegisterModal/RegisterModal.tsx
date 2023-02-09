@@ -132,7 +132,7 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
   return (
     <div className={styles.register}>
       <div className={styles.top}>
-        <h4>Регистрация</h4>
+        <h4>Registration</h4>
         <button onClick={() => setIsModalShow(false)}>
           <ExitThin />
         </button>
@@ -143,7 +143,7 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
           defaultValue={""}
           control={control}
           render={({ field }) => (
-            <InputPrimary title="ФИО" error={errors.fio?.message} {...field} />
+            <InputPrimary title="Full name" error={errors.fio?.message} {...field} />
           )}
         />
         <Controller

@@ -30,7 +30,7 @@ const InputPrimaryPhone = forwardRef<HTMLInputElement, Props>(
         inputNumbersValue = "7" + inputNumbersValue;
       }
 
-      formattedInputValue = "+7 ";
+      formattedInputValue = "+91 ";
 
       if (inputNumbersValue.length > 1) {
         formattedInputValue += "(" + inputNumbersValue.substring(1, 4);
