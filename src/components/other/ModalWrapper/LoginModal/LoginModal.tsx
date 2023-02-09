@@ -87,7 +87,7 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
   return (
     <div className={styles.login}>
       <div className={styles.top}>
-        <h4>Вход</h4>
+        <h4>Login</h4>
         <button onClick={() => setIsModalShow(false)}>
           <ExitThin />
         </button>
@@ -120,7 +120,7 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
           )}
         />
         <Button type="submit" className={styles.auth} primary>
-          Войти
+          Submit
         </Button>
       </form>
       <div className={styles.footer}>
@@ -132,7 +132,7 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
         </p>
         <p className={styles.info}>
           Entering data confirms your consent с{" "}
-          <Link href={"/"}>Privacy Policy</Link> и{" "}
+          <Link href={"/"}>Privacy Policy</Link>{" "}
           <Link href={"/"}>Processing of personal data</Link>.
         </p>
       </div>
