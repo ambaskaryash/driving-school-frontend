@@ -21,19 +21,19 @@ const ContactsSection: FC = () => {
     >
       <div className={styles.form}>
         <div>
-          <h4 className={styles.heading}>Остались вопросы?</h4>
+          <h4 className={styles.heading}>Do you have any questions?</h4>
           <p>
-            Свяжитесь с нами, отправив ваше имя и номер телефона и в ближайшее
-            время менеджер свяжется с вами и ответит на все ваши вопросы
+            Contact us by sending your name and phone number and as soon as possible
+            time the manager will contact you and answer all your questions
           </p>
         </div>
         <form>
           <div>
-            <InputSecondary title="Имя" placeholder="Введите ваше имя" />
+            <InputSecondary title="Name" placeholder="Enter your name" />
             <InputSecondary
-              title="Номер телефона"
+              title="Phone number"
               type="tel"
-              placeholder="Введите номер вашего телефона"
+              placeholder="Enter your phone number"
             />
           </div>
           <Button primary>
@@ -42,11 +42,11 @@ const ContactsSection: FC = () => {
         </form>
       </div>
       <div className={styles.info}>
-        <h5>Контактные данные</h5>
+        <h5>Contact details</h5>
         <ul>
           <li>
             <span>
-              <Phone /> <h6>Позвони сейчас</h6>
+              <Phone /> <h6>Call now</h6>
             </span>
             <span>
               <a href="tel:89857751262">+7 (985) 775-12-62</a>
@@ -68,16 +68,15 @@ const ContactsSection: FC = () => {
           </li>
           <li>
             <span>
-              <Geo /> <h6>Местоположение</h6>
+              <Geo /> <h6>Location</h6>
             </span>
             <span>
               <a
-                href="https://yandex.ru/maps/-/CCUvbUTgPD"
+                href="https://goo.gl/maps/hZvhRJvsrEzpcc6M6"
                 rel="noreferrer"
-                target="_blank"
-              >
-                754071, Московская область, город Сергиев Посад, улица 40 лет
-                Октября, 5А
+                target="_blank">
+                Rai Town 2, D29, Hingna Rd, near lata Mangeshkar Hospital, near CRPF Camp, Nagpur, Maharashtra
+
               </a>
             </span>
           </li>

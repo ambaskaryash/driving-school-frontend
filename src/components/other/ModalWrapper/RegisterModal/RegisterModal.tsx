@@ -30,29 +30,29 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
 
   const formSchema = Yup.object().shape({
     fio: Yup.string()
-      .required("Введите ваше ФИО")
+      .required("Enter your full name")
       .matches(
         /^[А-ЯA-Z][а-яa-zА-ЯA-Z\-]{0,}\s[А-ЯA-Z][а-яa-zА-ЯA-Z\-]{1,}(\s[А-ЯA-Z][а-яa-zА-ЯA-Z\-]{1,})?$/,
-        "Введите корректное ФИО"
+        "Please enter a valid full name"
       ),
     phone: Yup.string()
-      .required("Введите номер вашего телефона")
+      .required("Enter your phone number")
       .matches(
         /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$/,
-        "Введите корректный номер телефона"
+        "Please enter a valid phone number"
       ),
     email: Yup.string()
-      .required("Введите ваш E-mail адрес")
+      .required("Enter your E-mail address")
       .matches(
         /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
-        "Введите валидный E-mail"
+        "Enter a valid E-mail"
       ),
     password: Yup.string()
-      .required("Введите пароль")
-      .min(8, "Пароль должен содержать минимум 8 символов"),
+      .required("Enter Password")
+      .min(8, "Password must contain at least 8 characters"),
     repeatPassword: Yup.string()
-      .required("Подтвердите пароль")
-      .oneOf([Yup.ref("password")], "Пароли не совпадают")
+      .required("Confirm the password")
+      .oneOf([Yup.ref("password")], "Password Mismatch")
   });
   const validationOpt = { resolver: yupResolver(formSchema) };
 
@@ -91,7 +91,7 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
             message: "ㅤ"
           });
           setError("repeatPassword", {
-            message: "Ошибка сервера. Попробуйте позже"
+            message: "Server error. Try Again Later"
           });
         }
         switch (data.error.data.field) {
@@ -119,7 +119,7 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
               message: "ㅤ"
             });
             setError("repeatPassword", {
-              message: "Ошибка сервера. Попробуйте позже"
+              message: "Server error. Try Again Later"
             });
             break;
         }
@@ -153,7 +153,7 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
           render={({ field }) => (
             <InputPrimary
               type="tel"
-              title="Номер телефона"
+              title="Phone Number"
               error={errors.phone?.message}
               {...field}
             />
@@ -166,7 +166,7 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
           render={({ field }) => (
             <InputPrimary
               type="email"
-              title="Эл. почта"
+              title="People. post office"
               error={errors.email?.message}
               {...field}
             />
@@ -179,7 +179,7 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
           render={({ field }) => (
             <InputPrimary
               type="password"
-              title="Пароль"
+              title="Password"
               error={errors.password?.message}
               {...field}
             />
@@ -192,25 +192,25 @@ const RegisterModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
           render={({ field }) => (
             <InputPrimary
               type="password"
-              title="Подтвердите пароль"
+              title="Confirm the password"
               error={errors.repeatPassword?.message}
               {...field}
             />
           )}
         />
         <Button type="submit" className={styles.register} primary>
-          Зарегистрироваться
+        Register
         </Button>
       </form>
       <div className={styles.footer}>
         <p>
-          Уже есть аккаунт?{" "}
-          <button onClick={() => setModalType("login")}>Авторизуйтесь</button>
+          Already have an account?{" "}
+          <button onClick={() => setModalType("login")}>Log In</button>
         </p>
         <p className={styles.info}>
-          Ввод данных подтверждает ваше согласие с{" "}
-          <Link href={"/"}>политикой конфиденциальности</Link> и{" "}
-          <Link href={"/"}>обработкой персональных данных</Link>.
+        Entering data confirms your consent с{" "}
+          <Link href={"/"}>Privacy Policy</Link> и{" "}
+          <Link href={"/"}>Processing of personal data</Link>.
         </p>
       </div>
     </div>

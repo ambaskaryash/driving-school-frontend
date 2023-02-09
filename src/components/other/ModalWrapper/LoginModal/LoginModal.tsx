@@ -24,14 +24,14 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
 
   const formSchema = Yup.object().shape({
     email: Yup.string()
-      .required("Введите E-mail")
+      .required("Enter Email")
       .matches(
         /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
-        "Введите валидный E-mail"
+        "Enter a valid E-mail"
       ),
     password: Yup.string()
-      .required("Введите пароль")
-      .min(8, "Пароль должен содержать минимум 8 символов")
+      .required("Enter Password")
+      .min(8, "Password must contain at least 8 characters")
   });
   const validationOpt = { resolver: yupResolver(formSchema) };
 
@@ -51,7 +51,7 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
               message: "ㅤ"
             });
             setError("password", {
-              message: "Ошибка сервера. Попробуйте позже"
+              message: "Server error. Try Again Later"
             });
           }
           switch (data.error.data.field) {
@@ -73,7 +73,7 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
                 message: "ㅤ"
               });
               setError("password", {
-                message: "Ошибка сервера. Попробуйте позже"
+                message: "Server error. Try Again Later"
               });
               break;
           }
@@ -100,7 +100,7 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
           render={({ field }) => (
             <InputPrimary
               type="email"
-              title="Электронная почта"
+              title="Email"
               error={errors.email?.message}
               {...field}
             />
@@ -113,7 +113,7 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
           render={({ field }) => (
             <InputPrimary
               type="password"
-              title="Пароль"
+              title="Password"
               error={errors.password?.message}
               {...field}
             />
@@ -125,15 +125,15 @@ const LoginModal: FC<Props> = ({ setIsModalShow, setModalType }) => {
       </form>
       <div className={styles.footer}>
         <p>
-          Новый пользователь?{" "}
+          New user?{" "}
           <button onClick={() => setModalType("register")}>
-            Зарегистрируйтесь
+            Register
           </button>
         </p>
         <p className={styles.info}>
-          Ввод данных подтверждает ваше согласие с{" "}
-          <Link href={"/"}>политикой конфиденциальности</Link> и{" "}
-          <Link href={"/"}>обработкой персональных данных</Link>.
+          Entering data confirms your consent с{" "}
+          <Link href={"/"}>Privacy Policy</Link> и{" "}
+          <Link href={"/"}>Processing of personal data</Link>.
         </p>
       </div>
     </div>
