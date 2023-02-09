@@ -11,7 +11,7 @@ const Logo: FC = () => {
   return (
     <Link href="/#header" scroll={false} className={styles.logo}>
       <Image src={logo} alt="Логотип" width={48} height={51} />
-      <span className={styles.title}>Автошкола</span>
+      <span className={styles.title}>Drive With Confidence</span>
     </Link>
   );
 };

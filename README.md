@@ -1,11 +1,7 @@
-<h1 align="center">Driving School Frontend</h1>
+<h1 align="center">Drive With Confidence</h1>
 
-![Screen Shot](https://github.com/ShotMeow/ShotMeow/blob/main/assets/driving-school/preview.png?raw=true)
+<p align="center">Drive With Confidence - Learn Driving in 10 Days</p>
 
-<h2 align="center">О проекте</h2>
-<p align="center">Driving School Frontend - веб-интерфейс, осуществленный посредством использования технологий Next.js + TypeScript. Данный проект не продуктовый и разработан в качестве работы для портфолио.</p>
-
-<h2 align="center">Стэк технологий</h2>
 <ul>
     <li><a href="https://github.com/microsoft/TypeScript" target="_blank">TypeScript</a></li>
     <li><a href="https://github.com/vercel/next.js" target="_blank">Next.js</a></li>
@@ -15,10 +11,9 @@
     <li><a href="https://github.com/nolimits4web/swiper" target="_blank">Swiper</a></li>
 </ul>
 
-<h2 align="center">Запуск репозитория</h2>
+<h2 align="center">How to Install</h2>
 
 ```bash
-npm install // Установка необходимых пакетов
+npm install
 
-npm run dev // Запуск сервера разработки
-```
+npm run dev
