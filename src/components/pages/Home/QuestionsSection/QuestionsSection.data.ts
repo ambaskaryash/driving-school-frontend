@@ -8,7 +8,7 @@ export interface Question {
 export const data: Question[] = [
   {
     id: 1,
-    title: "Как получить налоговый вычет",
+    title: "How to get a tax deduction",
     description:
       "Чтобы вернуть часть денег за обучение в автошколе, необходимо иметь постоянную регистрацию и официальное трудоустройство. Подробнее можно уточнить в Федеральной налоговой службе.",
     isOpen: false

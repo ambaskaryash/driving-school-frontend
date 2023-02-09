@@ -28,38 +28,38 @@ const PrimarySection: FC = () => {
       className={styles.section}
     >
       <article className={styles.majorArticle}>
-        <h1>Научитесь водить уже через 3 месяца</h1>
+        <h1>Learn to drive in 10 Days</h1>
         <p>
-          Научитесь водить уже через 3 месяца. Предостовляем высококачественные
-          уроки вождения с 2000 года и выпускаем более 450 студентов в месяц.
+          Learn to drive in 3 months. We provide high quality
+          driving lessons since 2000 and graduating over 450 students per month.
         </p>
         <Link href="/#form" scroll={false}>
           <Button primary>
-            Записаться <Arrow />
+            Sign Up <Arrow />
           </Button>
         </Link>
-        <Image src={car} alt="Картинка машины" />
+        <Image src={car} alt="car picture" />
       </article>
       <div className={styles.items}>
         <article>
-          <Image src={chart} alt="График" />
-          <h4>График</h4>
-          <p>Подстраивающийся под вас</p>
+          <Image src={chart} alt="Graphic" />
+          <h4>Graphic</h4>
+          <p>Tailored to you</p>
         </article>
         <article>
-          <Image src={fleet} alt="Автопарк" />
-          <h4>Автопарк</h4>
-          <p>Ежегодно обновляется</p>
+          <Image src={fleet} alt="Car park" />
+          <h4>Car park</h4>
+          <p>Updated annually</p>
         </article>
         <article>
-          <Image src={instructor} alt="Инструктора" />
-          <h4>Инструктора</h4>
-          <p>С опытом не менее 5 лет</p>
+          <Image src={instructor} alt="Instructor" />
+          <h4>Instructor</h4>
+          <p>With at least 5 years experience</p>
         </article>
         <article>
-          <Image src={discount} alt="Рассрочка и скидки" />
-          <h4>Рассрочка и скидки</h4>
-          <p>На 12 м. и скидки студентам</p>
+          <Image src={discount} alt="Installments and discounts" />
+          <h4>Installments and discounts</h4>
+          <p>At 12 pm and student discounts</p>
         </article>
       </div>
       <Swiper
@@ -74,30 +74,30 @@ const PrimarySection: FC = () => {
       >
         <SwiperSlide className={styles.slide}>
           <article>
-            <Image src={chart} alt="График" />
-            <h4>График</h4>
-            <p>Подстраивающийся под вас</p>
+            <Image src={chart} alt="Graphic" />
+            <h4>Graphic</h4>
+            <p>Tailored to you</p>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
-            <Image src={fleet} alt="Автопарк" />
-            <h4>Автопарк</h4>
-            <p>Ежегодно обновляется</p>
+            <Image src={fleet} alt="Car park" />
+            <h4>Car park</h4>
+            <p>Updated annually</p>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
-            <Image src={instructor} alt="Инструктора" />
-            <h4>Инструктора</h4>
-            <p>С опытом не менее 5 лет</p>
+            <Image src={instructor} alt="Instructor" />
+            <h4>Instructor</h4>
+            <p>With at least 5 years experience</p>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
-            <Image src={discount} alt="Рассрочка и скидки" />
-            <h4>Рассрочка и скидки</h4>
-            <p>На 12 м. и скидки студентам</p>
+            <Image src={discount} alt="Installments and discounts" />
+            <h4>Installments and discounts</h4>
+            <p>At 12 pm and student discounts</p>
           </article>
         </SwiperSlide>
       </Swiper>

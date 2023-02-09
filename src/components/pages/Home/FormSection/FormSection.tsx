@@ -16,69 +16,69 @@ const FormSection: FC = () => {
       className={styles.section}
       id="form"
     >
-      <Heading>Подробная заявка на обучение</Heading>
+      <Heading>Detailed application for Training</Heading>
       <form className={styles.form}>
         <div className={styles.inputs}>
           <InputSecondary
             required
-            title="Имя"
-            placeholder="Введите ваше имя"
+            title="Name"
+            placeholder="Enter your name"
             dark
             name="name"
           />
           <InputSecondary
             required
-            title="Возраст"
+            title="Age"
             type="number"
-            placeholder="Введите кол-во полных лет"
+            placeholder="Enter Your Age"
             name="age"
             dark
           />
           <InputSecondary
             required
-            title="Номер телефона"
+            title="Phone number"
             type="tel"
-            placeholder="Введите номер вашего телефона"
+            placeholder="Enter your phone number"
             dark
             name="tel"
           />
           <InputSecondary
             required
-            title="Электронная почта"
+            title="Email"
             type="email"
-            placeholder="Введите вашу эл. почту"
+            placeholder="Enter your Email"
             dark
             name="email"
           />
         </div>
         <div className={styles.buttons}>
           <div>
-            <h5>Желаемые категории</h5>
+            <h5>Desired categories</h5>
             <div className={styles.category}>
               <Radio
                 required
-                title="B (легковой автомобиль)"
+                title="B (A Car)"
                 name="category"
                 defaultValue="B"
                 dark
               />
               <Radio
                 required
-                title="C (грузовой автомобиль)"
+                title="C (freight car)"
                 name="category"
                 defaultValue="C"
                 dark
               />
               <Radio
                 required
-                title="CE (грузовой автомобиль с прицепом)"
+                title="CE (truck with trailer)"
                 name="category"
                 defaultValue="CE"
                 dark
               />
               <Radio
                 required
-                title="D (автобус)"
+                title="D (bus)"
                 name="category"
                 defaultValue="D"
                 dark
@@ -86,25 +86,25 @@ const FormSection: FC = () => {
             </div>
           </div>
           <div>
-            <h5>Предпочитаемая группа</h5>
+            <h5>Preferred Group</h5>
             <div className={styles.group}>
               <Radio
                 required
-                title="Утренняя"
+                title="Morning"
                 name="group"
                 defaultValue="morning"
                 dark
               />
               <Radio
                 required
-                title="Дневная"
+                title="Daytime"
                 name="group"
                 defaultValue="day"
                 dark
               />
               <Radio
                 required
-                title="Вечерняя"
+                title="Evening"
                 name="group"
                 defaultValue="evening"
                 dark
@@ -113,7 +113,7 @@ const FormSection: FC = () => {
           </div>
         </div>
         <button className={styles.submit}>
-          Записаться <LongArrow />
+          Sign Up <LongArrow />
         </button>
       </form>
     </motion.section>

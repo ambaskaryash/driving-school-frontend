@@ -27,118 +27,118 @@ const CategoriesSection: FC = () => {
       className={styles.section}
       id="categories"
     >
-      <Heading>Выберите категорию</Heading>
+      <Heading>Select a category</Heading>
       <div className={styles.categories}>
         <article>
           <h3>
-            Категория <span>B</span>
+          Category <span>B</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarB} alt="Машина категории B" />
+            <Image src={categoryCarB} alt="Category B car" />
           </div>
           <ul>
             <li>
-              <Image src={price} alt="Иконка цены" />
+              <Image src={price} alt="price icon" />
               <span className={styles.heading}>23 400 ₽</span>
-              <span>с учётом топлива</span>
+              <span>с Fuel Accounting</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка теории" />
-              <span className={styles.heading}>Теория</span>
-              <span>- 2 месяца</span>
+              <Image src={theory} alt="theory icon" />
+              <span className={styles.heading}>Theory</span>
+              <span>-2 months</span>
             </li>
             <li>
-              <Image src={practice} alt="Иконка практики" />
-              <span className={styles.heading}>Практика</span>
-              <span>- 1.5 месяца</span>
+              <Image src={practice} alt="practice icon" />
+              <span className={styles.heading}>Practice</span>
+              <span>- 1.5 Months</span>
             </li>
           </ul>
           <Button primary>
-            Записаться <Arrow />
+            Sign up <Arrow />
           </Button>
         </article>
         <article>
           <h3>
-            Категория <span>C</span>
+            Category <span>C</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarC} alt="Машина категории C" />
+            <Image src={categoryCarC} alt="Category C car" />
           </div>
           <ul>
             <li>
-              <Image src={price} alt="Иконка цены" />
+              <Image src={price} alt="price icon" />
               <span className={styles.heading}>33 500 ₽</span>
-              <span>с учётом топлива</span>
+              <span>с Fuel accounting</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка теории" />
+              <Image src={theory} alt="theory icon" />
               <span className={styles.heading}>Теория</span>
-              <span>- 3 месяца</span>
+              <span>- 3 Months</span>
             </li>
             <li>
-              <Image src={practice} alt="Иконка практики" />
-              <span className={styles.heading}>Практика</span>
-              <span>- 2 месяца</span>
+              <Image src={practice} alt="Practice icon" />
+              <span className={styles.heading}>Practice</span>
+              <span>- 2 Months</span>
             </li>
           </ul>
           <Button primary>
-            Записаться <Arrow />
+            Sign up <Arrow />
           </Button>
         </article>
         <article>
           <h3>
-            Категория <span>CE</span>
+            Category <span>CE</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarCE} alt="Машина категории CE" />
+            <Image src={categoryCarCE} alt="CE category machine" />
           </div>
           <ul>
             <li>
-              <Image src={price} alt="Иконка цены" />
+              <Image src={price} alt="price icon" />
               <span className={styles.heading}>45 000 ₽</span>
-              <span>с учётом топлива</span>
+              <span>с fuel accounting</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка теории" />
-              <span className={styles.heading}>Теория</span>
-              <span>- 3 месяца</span>
+              <Image src={theory} alt="theory icon" />
+              <span className={styles.heading}>Theory</span>
+              <span>- 3 Months</span>
             </li>
             <li>
-              <Image src={practice} alt="Иконка практики" />
-              <span className={styles.heading}>Практика</span>
-              <span>- 2.5 месяца</span>
+              <Image src={practice} alt="Practice Icon" />
+              <span className={styles.heading}>Practice</span>
+              <span>- 2.5 Months</span>
             </li>
           </ul>
           <Button primary>
-            Записаться <Arrow />
+            Sign up <Arrow />
           </Button>
         </article>
         <article>
           <h3>
-            Категория <span>D</span>
+            Category <span>D</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarD} alt="Машина категории D" />
+            <Image src={categoryCarD} alt="Category D car" />
           </div>
           <ul>
             <li>
-              <Image src={price} alt="Иконка цены" />
+              <Image src={price} alt="price icon" />
               <span className={styles.heading}>26 000 ₽</span>
-              <span>с учётом топлива</span>
+              <span>с fuel accounting</span>
             </li>
             <li>
-              <Image src={theory} alt="Иконка теории" />
-              <span className={styles.heading}>Теория</span>
-              <span>- 3 месяца</span>
+              <Image src={theory} alt="theory icon" />
+              <span className={styles.heading}>Theory</span>
+              <span>- 3 Months</span>
             </li>
             <li>
-              <Image src={practice} alt="Иконка практики" />
-              <span className={styles.heading}>Практика</span>
-              <span>- 2.5 месяца</span>
+              <Image src={practice} alt="Practice icon" />
+              <span className={styles.heading}>Practice</span>
+              <span>- 2.5 Months</span>
             </li>
           </ul>
           <Button primary>
-            Записаться <Arrow />
+            Sign Up <Arrow />
           </Button>
         </article>
       </div>
@@ -158,117 +158,117 @@ const CategoriesSection: FC = () => {
               Категория <span>B</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarB} alt="Машина категории B" />
+              <Image src={categoryCarB} alt="Category B car" />
             </div>
             <ul>
               <li>
-                <Image src={price} alt="Иконка цены" />
+                <Image src={price} alt="Price icon" />
                 <span className={styles.heading}>23 400 ₽</span>
-                <span>с учётом топлива</span>
+                <span>с fuel accounting</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка теории" />
-                <span className={styles.heading}>Теория</span>
-                <span>- 2 месяца</span>
+                <Image src={theory} alt="theory icon" />
+                <span className={styles.heading}>Theory</span>
+                <span>- 2 Months</span>
               </li>
               <li>
-                <Image src={practice} alt="Иконка практики" />
-                <span className={styles.heading}>Практика</span>
-                <span>- 1.5 месяца</span>
+                <Image src={practice} alt="Practice icon" />
+                <span className={styles.heading}>Practice</span>
+                <span>- 1.5 Months</span>
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Sign Up <Arrow />
             </Button>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>C</span>
+              Category <span>C</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarC} alt="Машина категории C" />
+              <Image src={categoryCarC} alt="Category C car" />
             </div>
             <ul>
               <li>
-                <Image src={price} alt="Иконка цены" />
+                <Image src={price} alt="price icon" />
                 <span className={styles.heading}>33 500 ₽</span>
-                <span>с учётом топлива</span>
+                <span>с fuel accounting</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка теории" />
-                <span className={styles.heading}>Теория</span>
-                <span>- 3 месяца</span>
+                <Image src={theory} alt="theory icon" />
+                <span className={styles.heading}>Theory</span>
+                <span>- 3 Monrhts</span>
               </li>
               <li>
-                <Image src={practice} alt="Иконка практики" />
-                <span className={styles.heading}>Практика</span>
-                <span>- 2 месяца</span>
+                <Image src={practice} alt="practice icon" />
+                <span className={styles.heading}>Practice</span>
+                <span>- 2 Months</span>
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Sign Up <Arrow />
             </Button>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>CE</span>
+              Category <span>CE</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarCE} alt="Машина категории CE" />
+              <Image src={categoryCarCE} alt="CE category machine" />
             </div>
             <ul>
               <li>
-                <Image src={price} alt="Иконка цены" />
+                <Image src={price} alt="price icon" />
                 <span className={styles.heading}>45 000 ₽</span>
-                <span>с учётом топлива</span>
+                <span>с fuel accounting</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка теории" />
-                <span className={styles.heading}>Теория</span>
-                <span>- 3 месяца</span>
+                <Image src={theory} alt="theory icon" />
+                <span className={styles.heading}>Theory</span>
+                <span>- 3 Months</span>
               </li>
               <li>
-                <Image src={practice} alt="Иконка практики" />
-                <span className={styles.heading}>Практика</span>
-                <span>- 2.5 месяца</span>
+                <Image src={practice} alt="practice icon" />
+                <span className={styles.heading}>Practice</span>
+                <span>- 2.5 Months</span>
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Sign Up <Arrow />
             </Button>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>D</span>
+              Category <span>D</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarD} alt="Машина категории D" />
+              <Image src={categoryCarD} alt="Category D car" />
             </div>
             <ul>
               <li>
-                <Image src={price} alt="Иконка цены" />
+                <Image src={price} alt="price icon" />
                 <span className={styles.heading}>26 000 ₽</span>
-                <span>с учётом топлива</span>
+                <span>с fuel accounting</span>
               </li>
               <li>
-                <Image src={theory} alt="Иконка теории" />
-                <span className={styles.heading}>Теория</span>
-                <span>- 3 месяца</span>
+                <Image src={theory} alt="theory icon" />
+                <span className={styles.heading}>Theory</span>
+                <span>- 3 Months</span>
               </li>
               <li>
-                <Image src={practice} alt="Иконка практики" />
-                <span className={styles.heading}>Практика</span>
-                <span>- 2.5 месяца</span>
+                <Image src={practice} alt="practice icon" />
+                <span className={styles.heading}>Practice</span>
+                <span>- 2.5 Months</span>
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Sign Up <Arrow />
             </Button>
           </article>
         </SwiperSlide>
