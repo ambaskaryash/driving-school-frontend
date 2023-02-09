@@ -10,7 +10,7 @@ const ContactsPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Driving School - Контакты</title>
+        <title>Drive With Confidence</title>
       </Head>
       <Contacts />
     </Layout>

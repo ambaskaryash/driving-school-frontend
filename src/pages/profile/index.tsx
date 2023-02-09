@@ -11,7 +11,7 @@ const ProfilePage: NextPageAuth = () => {
   return (
     <Layout>
       <Head>
-        <title>Driving School - Профиль</title>
+        <title>Drive With Confidence</title>
       </Head>
       {data && <Profile user={data} />}
     </Layout>

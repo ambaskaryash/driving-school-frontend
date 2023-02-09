@@ -32,11 +32,11 @@ const App: NextPage<TypeAppProps> = ({ Component, pageProps }) => {
               />
               <meta
                 name="description"
-                content="Driving School - проект для автошколы, разработанный ShotMeow. Данный проект не является реальным и создан для добавления в портфолио. Проект описывает работу автошколы, работающей в онлайн-режиме."
+                content="Drive With Confidence."
               />
               <meta name="author" content="ShotMeow" />
               <meta name="copyright" content="ShotMeow" />
-              <title>Driving School</title>
+              <title>Drive With Confidence</title>
             </Head>
             <Component {...pageProps} />
           </AuthProvider>
