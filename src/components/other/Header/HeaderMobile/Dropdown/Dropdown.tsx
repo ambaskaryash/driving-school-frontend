@@ -116,7 +116,7 @@ const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
               className={styles.authorize}
               secondary
             >
-              Authorization
+              Login
             </Button>
           )}
         </div>
