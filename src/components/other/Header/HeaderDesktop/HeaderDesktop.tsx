@@ -55,7 +55,7 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
         {useAuth() ? (
           pathname.includes("profile") ? (
             <Button onClick={handleLogout} className={styles.profile} secondary>
-              Выйти
+              Log Out
             </Button>
           ) : (
             <Link href="/profile">
@@ -70,7 +70,7 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
             className={styles.authorize}
             secondary
           >
-            Authorization
+            Login
           </Button>
         )}
       </div>

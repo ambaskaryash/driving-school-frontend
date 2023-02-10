@@ -26,7 +26,7 @@ const InputPrimaryPhone = forwardRef<HTMLInputElement, Props>(
 
       console.log(inputNumbersValue);
 
-      if (inputNumbersValue[0] === "9") {
+      if (inputNumbersValue[0] === "10") {
         inputNumbersValue = "7" + inputNumbersValue;
       }
 
