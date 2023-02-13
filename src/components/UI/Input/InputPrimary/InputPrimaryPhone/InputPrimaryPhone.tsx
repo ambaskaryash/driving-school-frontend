@@ -33,16 +33,16 @@ const InputPrimaryPhone = forwardRef<HTMLInputElement, Props>(
       formattedInputValue = "+91 ";
 
       if (inputNumbersValue.length > 1) {
-        formattedInputValue += "(" + inputNumbersValue.substring(1, 4);
+        formattedInputValue += "(" + inputNumbersValue;
       }
       if (inputNumbersValue.length >= 5) {
-        formattedInputValue += ") " + inputNumbersValue.substring(4, 7);
+        formattedInputValue += ") " + inputNumbersValue;
       }
       if (inputNumbersValue.length >= 8) {
-        formattedInputValue += "-" + inputNumbersValue.substring(7, 9);
+        formattedInputValue += "-" + inputNumbersValue;
       }
       if (inputNumbersValue.length >= 10) {
-        formattedInputValue += "-" + inputNumbersValue.substring(9, 11);
+        formattedInputValue += "-" + inputNumbersValue;
       }
 
       input.value = formattedInputValue;
